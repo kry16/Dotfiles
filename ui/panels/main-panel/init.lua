@@ -88,18 +88,16 @@ return function(s)
         spacing = Beautiful.widget_spacing,
         {
           widget = Wibox.container.margin,
-          margins = Beautiful.widget_padding.inner,
+          top = Beautiful.widget_padding.inner,
+          bottom = Beautiful.widget_padding.inner,
           Wibox.widget.systray(),
         },
         {
           widget = Wibox.container.margin,
           top = User._priv.bar_padding,
           bottom = User._priv.bar_padding,
+          left = User._priv.bar_padding,
           module.calendar,
-        },
-        {
-          widget = Wibox.container.place,
-          valign = "center",
         },
         {
           widget = Wibox.container.margin,

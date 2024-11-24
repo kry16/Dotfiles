@@ -56,7 +56,7 @@ local function mkbutton(image, size, fn)
       strategy = "exact",
       {
         widget = Wibox.widget.imagebox,
-        image = Gears.color.recolor_image(image, Beautiful.neutral[200]),
+        image = Gears.color.recolor_image(image, Beautiful.neutral[100]),
         forced_width = size,
         forced_height = size,
         halign = "center",

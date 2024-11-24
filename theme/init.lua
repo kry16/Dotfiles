@@ -7,7 +7,7 @@ local dpi = Beautiful.xresources.apply_dpi
 local darken = Helpers.color.darken
 
 theme = dofile(gfs.get_themes_dir() .. "default/theme.lua")
-local _colors = require("theme.colorschemes.onedark")
+local _colors = require("theme.colorschemes.gruvbox_material")
 local cscheme = require("theme.palettegen")(_colors, "dark")
 
 theme.transparent = "#00000000"
@@ -60,7 +60,7 @@ theme.font = font.font_reg_m
 -- cscheme.neutral[850] = "#ECECE8"
 
 -- widget
-theme.radius = dpi(1)
+theme.radius = dpi(2)
 theme.widget_color = {
   cscheme.neutral[900],
   cscheme.neutral[800],

@@ -54,3 +54,7 @@ Gears.timer({
     collectgarbage("collect")
   end,
 })
+
+function my_restart()
+  Awful.spawn.with_shell(Gears.filesystem.get_configuration_dir() .. "utilities/scripts/send_notify_sleep.sh &")
+end

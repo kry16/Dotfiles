@@ -82,9 +82,9 @@ return Wibox.widget({
             left = Beautiful.widget_padding.inner * 0.25,
             {
                widget = Wibox.widget.textbox,
-               markup = htext.colorize_text(htext.upper("volumen"), Beautiful.neutral[200]),
+               markup = htext.colorize_text("Sonido", Beautiful.neutral[100]),
                -- markup = htext.colorize_text(htext.upper(User.config.speaker.name), Beautiful.neutral[200]),
-               font = Beautiful.font_med_xs,
+               font = Beautiful.font_reg_s,
             },
          },
          {

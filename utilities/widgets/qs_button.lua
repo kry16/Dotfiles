@@ -196,7 +196,7 @@ templates.windows_label = function(opts)
     sep = Wibox.widget({
       widget = Wibox.container.background,
       forced_height = 25,
-      forced_width = defaults.border_width,
+      forced_width = defaults.border_width == 0 and 1 or defaults.border_width,
       bg = defaults.separator_color
     })
   end
