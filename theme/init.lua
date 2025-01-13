@@ -7,12 +7,12 @@ local dpi = Beautiful.xresources.apply_dpi
 local darken = Helpers.color.darken
 
 theme = dofile(gfs.get_themes_dir() .. "default/theme.lua")
-local _colors = require("theme.colorschemes.gruvbox_material")
-local cscheme = require("theme.palettegen")(_colors, "dark")
+local _colors = require("theme.colorschemes.gruvbox")
+local cscheme = require("theme.palettegen")(_colors, "dark (medium)")
 
 theme.transparent = "#00000000"
 
-theme.wallpaper = themes_path .. "assets/wallpapers/16.jpg"
+theme.wallpaper = themes_path .. "assets/wallpapers/8anLake.png"
 theme.music_cover = themes_path .. "assets/no_music.png"
 theme.user_icon = themes_path .. "assets/user_icon.png"
 
