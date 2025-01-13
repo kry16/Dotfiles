@@ -7,7 +7,7 @@ local create_task = function(self, c, index, objects)
   Helpers.gc(self, "icon_client").image = Utils.apps_info:get_icon_path({
     client = c,
     manual_fallback = c.icon
-  })
+  }) or c.icon
 end
 
 local update_task = function(self, c, _, _)

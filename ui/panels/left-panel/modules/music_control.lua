@@ -64,6 +64,7 @@ local art_bg = Wibox.widget({
   resize = true,
   valign = "center",
   halign = "center",
+  visible = User.music.control.art_bg,
   clip_shape = default.shape,
 })
 
@@ -199,7 +200,7 @@ return Wibox.widget({
     {
       widget = Wibox.container.background,
       bg = default.overlay_bg,
-      opacity = (Beautiful.type == "dark" and 0.7 or 0.35) or nil,
+      opacity = (art_bg.visible and (Beautiful.type == "dark" and 0.7 or 0.35)) or 1,
     },
     {
       widget = Wibox.container.margin,

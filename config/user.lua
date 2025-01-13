@@ -30,7 +30,7 @@ user.config.layouts = {
    Awful.layout.suit.magnifier,
    Awful.layout.suit.max,
 }
-user.config.tags = { "1", "2", "3", "4", "5" }
+user.config.tags = { "I", "II", "III", "IV", "V" }
 
 user.vars = {}
 user.vars.modkey = "Mod4"

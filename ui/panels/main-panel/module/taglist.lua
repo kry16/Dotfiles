@@ -81,7 +81,7 @@ menu_tag.menu:add(create_tag_button({
 --   end
 -- }))
 
-Beautiful.taglist_index_as_name = true
+Beautiful.taglist_index_as_name = false
 
 return function(s)
   -- Create a taglist widget
